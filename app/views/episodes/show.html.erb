@@ -6,6 +6,8 @@
 
 <ul>
   <% @episode.guests.each do |guest| %>
-    <li><%= link_to guest.name, guest %></li>
+    <li><%= link_to guest.name, guest %>
+    <% appearance = Appearance.find_by(episode_id: @episode.id, guest_id: guest.id) %>
+    <%= link_to "Edit this Appearance", edit_appearance_url %></li>
   <% end %>
 </ul>

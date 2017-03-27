@@ -1,6 +1,6 @@
 # Rails Assessment
 
-It's time to put our Rails know-how to the test. Today, we have an basic new application.
+It's time to put our Rails know-how to the test. Today, we have a basic new application.
 
 ## Objectives
 + MVC
@@ -27,3 +27,11 @@ The app you built on Monday is now functioning great. Stephen just has a few ext
 ### Hints / Tips
 
 + Remember we want to be RESTful. What URL should we use to display our edit form? What action should be responsible for updating the request?
+
+### Notes
+1. Did not make "producer" a visible or editable field since the producer should only be appearances that he/she made
+2. Made the edit form a link on the episode show page for easy access
+3. Abstracted the form for edit/new appearance pages since they were the same
+4. Changed Episode index page to be links to episode show pages for better userability and navigation
+5. In theory, everything works, but could not get anything to save or update to my database, spent way too much time debugging this. On the bright side, I successfully figured out flash messages and even got them to turn red!
+6. next guess was to change the add user id to appearances column to "add_reference" but game of thrones music came on..
